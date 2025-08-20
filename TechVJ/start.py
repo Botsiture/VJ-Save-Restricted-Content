@@ -61,10 +61,10 @@ async def send_start(client: Client, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
     buttons = [[
-        InlineKeyboardButton("⌯ ᴅᴇᴠᴇʟᴏᴘᴇʀ ⌯", url = "https://t.me/iMSASUKES7i")
+        InlineKeyboardButton("ＩＭ 𖣘︎ ＵＣＨＩＨＡ", url = "https://t.me/iMSASUKES7i")
     ],[
-        InlineKeyboardButton('⌯ sᴜᴘᴘᴏʀᴛ ⌯', url='https://t.me/SandVillage'),
-        InlineKeyboardButton('⌯ ᴄʜᴀɴɴᴇʟ ⌯', url='https://t.me/NARUTOPUBLICST')
+        InlineKeyboardButton('⌯ sᴜᴘᴘᴏʀᴛ ⌯', url='https://t.me/+kn9grAIIC5IyYzU9'),
+        InlineKeyboardButton('⌯ ᴄʜᴀɴɴᴇʟ ⌯', url='https://t.me/SANDVILLAGE')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
